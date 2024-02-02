@@ -34,8 +34,9 @@ public class FileEncryptorMavenPlugin extends AbstractMojo {
             encryptorDecryptor.encrypt(srcDir, temDir);
             FileReader fileReader = new FileReader();
             fileReader.copyFolder(new File(temDir), new File(srcDir));
-            fileReader.deleteFolder(new File(temDir));
+            fileReader.deleteFolder(new File(temDir).getParentFile());
         } catch (Exception e) {
+            e.printStackTrace();
             throw new MojoExecutionException("Unable to Encrypt the file");
         }
         getLog().info("File Encryptor Plugin Ended");
