@@ -1,0 +1,17 @@
+.idea/
+.project
+.classpath
+.mvn/
+.settings/
+mvnw
+mvnw.cmd
+bin/
+target/
+logs/
+rms.iml
+*.iml
+/logs/*
+*.log
+*.ipr
+*.iws
+.flattened-pom.xml
