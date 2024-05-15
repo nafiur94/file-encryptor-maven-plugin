@@ -11,6 +11,14 @@ This is a maven plugin that will encrypt and decrypt the source code. It will be
 
 Add in your pom.xml file:
 
+Clone the repository and run the following command:
+
+```bash
+mvn clean install
+```
+
+After that, add the following code in your pom.xml file:
+
 ## Encryption
 ```xml
 <build>
