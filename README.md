@@ -7,6 +7,10 @@ This is a maven plugin that will encrypt and decrypt the source code. It will be
 * Java
 * Maven Plugin
 
+## Pre-requisite
+1. Secret key should be strong enough to encrypt the source code. The secret key should be 16 characters long.
+2. Specify the directory where the source code is located.
+
 ## Example
 
 Clone the repository and run the following command:
@@ -16,10 +20,6 @@ mvn clean install
 ```
 
 After that, add the following code in your project's pom.xml file:
-
-## Pre-requisite
-1. Secret key should be strong enough to encrypt the source code. The secret key should be 16 characters long.
-2. Specify the directory where the source code is located.
 
 ## Encryption
 ```xml
