@@ -1,6 +1,6 @@
 # Source Code Encryptor and Decryptor
 
-This is a maven plugin that will encrypt and decrypt the source code. It will be used to encrypt the source code before sharing any project in any medium. The source code will be decrypted on the server side. This will prevent the source code from being stolen.
+This is a maven plugin that will encrypt and decrypt the source code. It will be used to encrypt the source code before sharing your project in any medium. The source code will be decrypted on the server side. This will prevent the source code from being stolen.
 
 ## Tech Stack
 
