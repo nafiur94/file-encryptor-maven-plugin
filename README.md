@@ -9,8 +9,6 @@ This is a maven plugin that will encrypt and decrypt the source code. It will be
 
 ## Example
 
-Add in your pom.xml file:
-
 Clone the repository and run the following command:
 
 ```bash
