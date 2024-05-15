@@ -70,7 +70,5 @@ After that, add the following code in your project's pom.xml file:
 To encrypt or decrypt the source code, run the following command in your targeted project directory:
 
 ```bash
-
-```bash
 mvn clean install
 ```
