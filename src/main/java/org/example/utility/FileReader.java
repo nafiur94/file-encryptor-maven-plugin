@@ -16,6 +16,9 @@ public class FileReader {
     private Set<File> getFiles(File dir) {
         Set<File> files = new HashSet<>();
         File filesList[] = dir.listFiles();
+        if (filesList == null) {
+            return new HashSet<>();
+        }
         for (File file : filesList) {
             if (!file.getName().startsWith(".") && file.isDirectory()) {
                 files.addAll(getFiles(file));
@@ -52,7 +55,7 @@ public class FileReader {
             }
         } else {
             try (InputStream in = Files.newInputStream(source.toPath());
-                OutputStream out = Files.newOutputStream(destination.toPath());) {
+                 OutputStream out = Files.newOutputStream(destination.toPath());) {
                 byte[] buffer = new byte[1024];
                 int length;
                 while ((length = in.read(buffer)) > 0) {
